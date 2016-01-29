@@ -1,0 +1,234 @@
+/* Team Section Styles
+================================================================== */
+
+.team {
+	background-color: #222222;
+}
+
+.team .light-gray-bg {
+    border:0;
+}
+
+.overlay-visible.overlay-container:hover .overlay-bottom:not(.links),
+.overlay-visible.overlay-container:hover .overlay-top {
+	opacity: 1;
+}
+
+.full-text-container.border-clear.white-faded {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.icon {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.team h2 {
+  color: #fff;
+}
+
+.full-text-container.border-clear.white-faded {
+  padding:40px;
+}
+
+/* Typed.js Styles
+================================================================== */
+
+.typed-cursor {
+  opacity: 1;
+  font-weight: 100;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@-keyframes blink {
+  0% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@-ms-keyframes blink {
+  0% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@-o-keyframes blink {
+  0% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+/* Intro Section
+================================================================== */
+
+.logoimg {
+  padding-left:none;
+  padding-right:0;
+  padding-bottom:20px;
+  width:250px;
+  margin:0 auto;
+
+}
+
+#intro {
+   background: #111 url(../images/header-img.jpg) no-repeat center;
+   overflow: hidden;
+}
+
+/* FlexSlider Intro Slider Styles */
+.slides {
+   max-height: 660px;
+   overflow: hidden;
+}
+.slider-text {
+   color: #737E8C;
+   text-align: center;
+   width: 85%;
+   margin: 10% auto 10% auto;
+}
+.slider-text h2 {
+   font: 4em montserrat-regular, Sans-serif;
+   color: #fff;
+   text-shadow: 0px 1px 5px rgba(50, 50, 50, .5);
+   padding: 0;
+   margin: 0;
+   text-transform: none;
+}
+.slider-text h2 .blue,
+.slider-text a { 
+	font-weight:bold;
+
+}
+
+.slider-text p {
+   font: 17px/36px opensans-light, sans-serif;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .3);
+   padding: 0;
+   margin: 18px 10% 0;
+}
+
+.light.social-links li a {
+    /*background-color: #09afdf;*/
+    border: 1px solid #25CBF5;
+    color: #25CBF5;
+}
+
+.light.social-links li a:hover {
+    /*background-color: #ffffff;*/
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.social-reach {
+	color:#fff;
+}
+
+
+
+/* Mobile Navbar Collapse
+------------------------------ */
+/* mobile menu toggle button on hover/focus */
+.logo {
+  padding-top:6px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #777777;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fafafa;
+  border-color: #0c9ec7;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ccc;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #0c9ec7;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #777;
+}
+
+.shadow:after, .shadow-narrow:after {
+     -webkit-box-shadow: none; 
+     box-shadow: none; 
+ }
+
+
+/* MEDIA QUERIES 
+================================================================== */
+
+
+/* Intro Section Media Queries
+================================*/
+@media (max-width:768px) {
+	.slider-text h2 { 
+		font-size: 2.5em;
+	}
+}
+@media (max-width:438px) {
+	.slider-text h2 {
+	   padding-top:5%;
+	   padding: 10% auto;
+	   margin: 0;
+	   text-transform: none;
+	}
+
+	nav .navbar .navbar-default {
+		border-color:rgba(0,0,0,0);
+		border:0;
+	}
+}
+
+@media (max-width:992px) {
+	.logo {
+		display:none;
+	}
+}
+
+@media (min-width: 768px) {
+	.with-dropdown-buttons .navbar-default .navbar-collapse {
+	    padding-right: 0;
+	}
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+	.main-navigation.with-dropdown-buttons {
+		.navbar-default .navbar-collapse {
+			padding-right: 0;
+		}
+	}
+}
